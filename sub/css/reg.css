@@ -411,9 +411,10 @@ a.supportCenter {
     .agreeterms #agreeterms:checked + label.checkbox:before {
         border-width: 6px;
     }
-    .checkbox a {
+    .agreeterms label a {
         display: block;
         margin-left: 30px;
+        margin-top: 6px;
         line-height: 28px;
         height: 28px;
     }
@@ -448,8 +449,8 @@ a.supportCenter {
         margin: 20px auto;
     }
     .gotologin a {
-        font-size: .9em;
-        font-weight: 400;
+        font-size: 1em;
+        font-weight: 700;
     }
     
     /* popup */
@@ -468,8 +469,11 @@ a.supportCenter {
         height: 20px;
         width: 14px;
     }
+    .terms_lego .accountTermsInfo {
+        min-height: 560px;
+        height: 80vh;
+    }
 }
-
 
 
 
