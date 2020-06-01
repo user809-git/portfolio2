@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
+    <title>LEGO® | 레고®</title>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/5d65a7ae82.js" crossorigin="anonymous"></script>
+    <script src="js/prefixfree.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery.easing.1.3.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("header").load("sub/header.html");
+            $("footer").load("sub/footer.html");
+        });
+    </script>
+    <script src="js/custom.js"></script>
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    
+    <header>
+<!--     logo/ gnb/ search / playzone   -->
+    </header>
+    
+    <div id="visualSlide">
+        <div class="slide swiper-container">
+            <div class="swiper-wrapper">
+                <div class="slideEl slideEl1 swiper-slide">
+                    <div class="slideImg"></div>
+                    <div class="slideCont ani">
+                        <img class="sImg12" src="img/Product-Large1-el2.png" alt="닌자고02">
+                        <img class="sImg11" src="img/Product-Large1-el1.png" alt="닌자고01">
+                        <div class="titleBox titleBox1">
+                            <a class="goBtn" href="javascript:;"></a>
+                            <h3>액션으로 <br class="mob">가득한 세계</h3>
+                            <p>신규 레고&reg; <span class="mobOn">닌자고&reg;</span> 세트로 흥미진진한 대결을 펼쳐보세요</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slideEl slideEl2 swiper-slide">
+                    <div class="slideImg"></div>
+                    <div class="slideCont ani">
+                        <img class="sImg23" src="img/Product-Large2-el3.png" alt="자동차03">
+                        <img class="sImg22" src="img/Product-Large2-el2.png" alt="자동차02">
+                        <img class="sImg21" src="img/Product-Large2-el1.png" alt="자동차01">
+                        <div class="titleBox titleBox2">
+                            <a class="goBtn" href="javascript:;"></a>
+                            <h3>마음을 사로잡는 <br class="mob">드라이빙</h3>
+                            <p>원하는 온갖 자동차를 <span class="mobOn">레고&reg; 테크닉</span>에서 찾아보세요</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slideEl slideEl3 swiper-slide">
+                    <div class="slideImg"></div>
+                    <div class="slideCont ani">
+                        <img class="sImg33" src="img/Product-Large3-el3.png" alt="레고클래식03">
+                        <img class="sImg32" src="img/Product-Large3-el2.png" alt="레고클래식02">
+                        <img class="sImg31" src="img/Product-Large3-el1.png" alt="레고클래식01">
+                        <div class="titleBox titleBox3">
+                            <a class="goBtn" href="javascript:;"></a>
+                            <h3>온 가족이 즐기는 <br class="mob">레고® 클래식</h3>
+                            <p>레고&reg; 클래식으로 어린이들의 창의력을 키워 주세요</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slideEl slideEl4 swiper-slide">
+                    <div class="slideImg"></div>
+                    <div class="slideCont ani">
+                        <img class="sImg41" src="img/Product-Large4-el1.png" alt="레고차량세트01">
+                        <div class="titleBox titleBox4">
+                            <a class="goBtn" href="javascript:;"></a>
+                            <h3>간절히 원하던 <br class="mob">드림카!</h3>
+                            <p><span class="mobOn">레고&reg; 차량 세트</span>로 드림카를 조립해 보세요</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slidePageNum swiper-pagination"></div>
+        <a class="scroll-down">scroll</a>
+    </div>
+    <script src="js/swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            speed: 500,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            on: {
+                slideChangeTransitionStart: function(){
+                    $('.swiper-slide').find('.ani').removeClass("Fa");
+                    $('.swiper-slide-active').find('.ani').addClass("Fa");
+                }
+            }
+        });
+    </script>
+<!--   슬라이드 끝 //-->
+    
+    <div id="container">
+        <div class="box eventBox">
+            <h2 class="contTit">이벤트<a class="moreBtn" href="#"><img src="img/moreBtn.png" alt="더보기"></a></h2>
+            <div class="eventWrap">
+                <div class="eventImg"></div>
+                <div class="eventTxt">
+                    <strong>레고&reg; 틴케이스를 <br>무료로 받으세요!*</strong>
+                    <div class="txt">
+                        <span>199,000원 이상</span><br><span>온라인 구매 시</span><br><span>수집용 틴 케이스를</span><br><span>무료로 증정해 드립니다.</span>
+                    </div>
+                    <p>온라인 한정, 한정 수량, 05.05 ~ 05.17</p>
+                </div>
+            </div>
+        </div><!--eventBox//-->
+        
+        <div class="box categBox">
+            <h2 class="contTit">추천 카테고리</h2>
+            <div class="categWrap wrapFix">
+                <ul>
+                    <li class="categBtn recom1">
+                       <a href="#"><img src="img/categ_categ1.png" alt="단종예정"></a>
+                    </li>
+                    <li class="categBtn recom2">
+                        <a href="#"><img src="img/categ_categ2.png"
+                         alt="신제품"></a>
+                    </li>
+                    <li class="categBtn recom3">
+                        <a href="#"><img src="img/categ_categ3.png" alt="독점제품"></a>
+                    </li>
+                </ul>
+            </div>
+        </div><!--categBox//-->
+        
+        <div class="box hotiBox">
+            <h2 class="contTit"><img class="titTag" src="img/NOW_tag.png" alt="now">인기제품<a class="moreBtn" href="#"><img src="img/moreBtn.png" alt="더보기"></a></h2>
+            <div class="hotiWrap">
+                <ul>
+                    <li class="item item1">
+                        <div class="logoimg">
+                            <img class="itemlogo1" src="img/logo-technic.png" alt="TECHNIC">
+                        </div>
+                    </li>
+                    <li class="item item2">
+                        <div class="logoimg">
+                            <img class="itemlogo2" src="img/logo-architecture-f.png" alt="Architecture">
+                        </div>
+                    </li>
+                    <li class="item item3">
+                        <div class="logoimg">
+                            <img class="itemlogo3" src="img/logo-creator-expert-f.png" alt="creator-expert">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div><!--hotiBox//-->
+        
+        <div class="box seriesBox">
+            <h2 class="contTit">시리즈<a class="moreBtn" href="#"><img src="img/moreBtn.png" alt="더보기"></a></h2>
+            <div class="seriesWrap">
+                <ul>
+                    <li class="itemS newyork">
+                        <div class="infotxt">
+                            <img src="img/logo-architecture-0.png" alt="아키텍처" class="itmlogo">
+                            <span>아키텍처</span>
+                            <span>뉴욕시티</span>
+                        </div>
+                    </li>
+                    <li class="itemS rocket">
+                        <div class="infotxt">
+                            <img src="img/logo-city.png" alt=" 시티" class="itmlogo">
+                            <span>시티</span>
+                            <span>우주 로켓과 <br>발사 관제소</span>
+                        </div>
+                    </li>
+                    <li class="itemS starwars">
+                        <img src="img/item-tag-elxclusive.png" alt="독점제품" class="itmTag ex">
+                        <div class="infotxt">
+                            <img src="img/logo-star-wars-0.png" alt="스타워즈" class="itmlogo">
+                            <span>스타워즈&trade;</span>
+                            <span>스타워즈 제국의 스타 <br>디스트로이어1trade;</span>
+                        </div>
+                    </li>
+                    <li class="itemS ford">
+                        <img src="img/item-tag-rare.png" alt="레어제품" class="itmTag rare">
+                        <div class="infotxt">
+                            <img src="img/logo-creator.png" alt="크리에이터 엑스퍼트" class="itmlogo">
+                            <span>크리에이터 <br>엑스퍼트</span>
+                            <span>포드 머스탱</span>
+                        </div>
+                    </li>
+                </ul>
+                
+                <div class="s-prev-arr"></div>
+                <div class="s-next-arr"></div>
+            </div>
+        </div><!--seriesBox//-->
+        
+        <div class="box spotlBox">
+            <h2 class="contTit"><img class="titTag" src="img/NOW_tag.png" alt="now">스포트라이트</h2>
+            <div class="spotlWrap">
+                <ul>
+                    <li class="sec sec1">
+                        <div class="secimg secimg1"><img class="mob secLogo" src="img/logo-friends.png" alt=""></div>
+                        <div class="secinfo">
+                            <p class="sectit">프렌즈 친구들과 떠나는 여행</p>
+                            <span class="sectxt">신규 레고® 프렌즈 세트로 <br>아이들의 상상력을 키워 주세요.</span>
+                        </div>
+                    </li>
+                    <li class="sec sec2">
+                        <div class="secimg secimg2"><img class="mob secLogo" src="img/logo-minifigures.png" alt=""></div>
+                        <div class="secinfo">
+                            <p class="sectit">시리즈 20 출시</p>
+                            <span class="sectxt">신제품 미니피겨 16개 중 1개가 랜덤으로 숨겨진 <br>수수께끼 패키지를 열어보세요.</span>
+                        </div>
+                    </li>
+                    <li class="sec sec3">
+                        <div class="secimg secimg3"><img class="mob secLogo" src="img/logo-classic.png" alt=""></div>
+                        <div class="secinfo">
+                            <p class="sectit">레고® 클래식</p>
+                            <span class="sectxt">큰 것부터 작은 것까지, 현실 세계부터 판타지 세계까지, <br>어떠한 것이라도 조립할 수 있어요!</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div><!--spotlBox//-->
+    </div>
+    
+    <footer>
+<!--     contactUs/ bottomMenu/ footer   -->
+    </footer>
+    
+</body>
+</html>
