@@ -4,8 +4,6 @@ $(document).ready(function(){
     mainVisual.height(wh);
 
     $(window).on("resize", function(){
-        location.reload();
-        // 서버에서 확인!
         
         mainVisual.height(wh);
         
