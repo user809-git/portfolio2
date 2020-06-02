@@ -376,7 +376,7 @@ a.closeBtn {
     width: 50px;
     height: 50px;
     position: absolute;
-    top: calc(100vh - 80px);
+    bottom: 30px;
     left: calc(50vw - 25px);
     z-index: 99;
     opacity: .8;
