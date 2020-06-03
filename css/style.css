@@ -590,7 +590,7 @@
         left: 12vw;
     }
     #gnbPage #gnb li {
-        margin: 0;
+        margin-bottom: 18px;
     }
     #gnbPage #gnb a {
         font-size: 38px;
