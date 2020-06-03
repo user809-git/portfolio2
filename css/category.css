@@ -21,7 +21,6 @@
     line-height: 1;
     color: #999;
     box-sizing: border-box;
-    background: url('../img/arr_title.png') no-repeat 170px 50%;
 }
 .pageTit a, .pageTit a:active, .pageTit a:visited {
     color: #999;
@@ -29,6 +28,11 @@
 .pageTit a:hover {
     color: #999;
     text-decoration: underline;
+}
+.pageTit .arr {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 18px;
 }
 
 /* 카테고리 선택 .category*/
@@ -157,6 +161,15 @@
         margin: 0 auto 110px;
         top: 110px;
         padding: 20px 9vw 70px;
+    }
+    .pageTit {
+        display: block;
+        width: 185px;
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
+    .pageTit .arr {
+        display: inline-block;
     }
     
     .category {

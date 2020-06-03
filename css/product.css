@@ -21,7 +21,6 @@ nav a, nav a:active, nav a:visited {
     line-height: 1;
     color: #999;
     box-sizing: border-box;
-    background: url('../img/arr_title.png') no-repeat 170px 50%;
 }
 .pageTit a, .pageTit a:active, .pageTit a:visited {
     color: #999;
@@ -31,7 +30,12 @@ nav a, nav a:active, nav a:visited {
     text-decoration: underline;
 }
 .pageTit span {
-    margin-left: 60px;
+    margin-left: 18px;
+}
+.pageTit .arr {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 18px;
 }
 
 /* 옵션 선택창 option box */
@@ -269,6 +273,10 @@ ul.list.active {
 
 
 @media all and (min-width:1201px) {
+    .mob {
+        display: none;
+    }
+    
     .productList > ul > li:nth-child(3n) {
         margin-right: 0;
     }
@@ -279,6 +287,9 @@ ul.list.active {
 }
 
 @media all and (min-width:641px) and (max-width:1200px) {
+    .mob {
+        display: none;
+    }
     #content {
         width: 100%;
         max-width: 600px;
@@ -422,17 +433,17 @@ ul.list.active {
     }
     .pageTit {
         display: block;
-        width: 180px;
+        width: 185px;
         height: 90px;
-        padding-right: 30px;
         box-sizing: border-box;
-        background-position: 160px 5px;
         margin: 0 auto;
     }
     .pageTit span {
         display: block;
         margin-left: 0;
-        margin-top: 5px;
+    }
+    .pageTit .arr {
+        display: inline-block;
     }
     
     /* 옵션 선택창 option box */

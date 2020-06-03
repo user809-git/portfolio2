@@ -1,0 +1,267 @@
+@charset "UTF-8"
+    
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap');
+
+#offers a, #offers a:active, #offers a:visited {
+    color: #333;
+}
+.contentbox {
+    width: 942px;
+/*    height: 1000px;*/
+    margin: 0 auto 70px;
+    position: relative;
+    top: 140px;
+    background-color: #f9f9f9;
+    box-shadow: 0px -10px 50px #ddd;
+    padding: 42px 0 0;
+    box-sizing: border-box;
+}
+.pageTit {
+    font-size: 40px;
+    line-height: 1;
+    color: #999;
+    box-sizing: border-box;
+    margin: 0 71px;
+}
+.pageTit > a, .pageTit > a:active, .pageTit > a:visited {
+    color: #999 !important;
+}
+.pageTit a:hover {
+    color: #999;
+    text-decoration: underline;
+}
+.pageTit .arr {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 18px;
+}
+
+.weekly {
+    background: url('../img/event-promo-cover-img.jpg') no-repeat 100% center;
+    background-size: cover;
+    width: 100%;
+    height: 310px;
+    margin-top: 50px;
+    box-sizing: border-box;
+    position: relative;
+    
+    cursor: pointer;
+}
+.offersTit {
+    color: #fff;
+    font-size: 34px;
+    line-height: 1.5;
+    font-weight: 700;
+    display: block;
+    width: 300px;
+    position: absolute;
+    left: 133px;
+    top: 70px;
+}
+.offer-terms {
+    width: 80%;
+    margin: 50px auto;
+    display: none;
+    padding-bottom: 60px;
+}
+.offer-terms strong {
+    font-size: 18px;
+    font-weight: 700;
+    color: #777;
+}
+.offer-terms p {
+    font-size: 14px;
+    line-height: 1.3;
+    font-weight: 400;
+    letter-spacing: 1px;
+    word-break: keep-all;
+    color: #777;
+    
+}
+.offer-terms p ins {
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+/* promotion */
+.boxTit {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1;
+    color: #333;
+    box-sizing: border-box;
+    margin: 0 0 70px;
+    text-align: center;
+}
+.pointBox {
+    width: 95%;
+    margin: 0 auto;
+    
+    cursor: pointer;
+}
+.point {
+    display: inline-block;
+    margin: 2%;
+    width: 45%;
+/*    height: 410px;*/
+    overflow: hidden;
+    vertical-align: top;
+}
+.point img {
+    width: 100%;
+}
+.point .pointTxt {
+    width: 100%;
+    height: 170px;
+}
+.point p {
+    font-size: 18px;
+    text-align: center;
+    color: #555;
+}
+.point span {
+    display: block;
+    width: 65%;
+    margin: 0 auto;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* vip 안내 */
+.colorbox {
+    padding: 0;
+}
+.colorbox .boxTit {
+    margin: 0;
+    color: #fff;
+    font-weight: 700;
+    padding: 70px 0;
+    line-height: 1.3;
+}
+
+#vip {
+    background: url('../img/vip-img.jpg') no-repeat 100% center;
+    background-size: cover;
+    box-shadow: 0px -10px 50px #ccc;
+}
+
+/* bargain sale */
+#sale {
+    margin: 0 auto 190px;
+    background: url('../img/the-lego-background.jpg') no-repeat center;
+    background-size: cover;
+    box-shadow: 0px -10px 50px #ccc;
+}
+
+@media all and (min-width:1201px) {
+    .mob {
+        display: none;
+    }
+}
+
+@media all and (min-width:641px) and (max-width:1200px) {
+    .contentbox {
+        width: 100%;
+        max-width: 600px;
+    }
+    
+    .weekly {
+        height: 290px;
+        background-position: ;
+    }
+    .offersTit {
+        font-size: 28px;
+        line-height: 1.4;
+        color: #fff;
+        left: 34px;
+        top: 15px;
+        margin: 0;
+        height: 80px;
+    }
+    .offer-terms strong {
+        font-size: 14px;
+    }
+    .offer-terms p {
+        font-size: 12px;
+    }
+    
+    .point {
+/*        height: 330px;*/
+    }
+    .point span {
+        width: 71%;
+    }
+}
+
+@media all and (max-width:640px) {
+    .contentbox {
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0 auto 110px;
+        top: 110px;
+        padding: 20px 0 0;
+    }
+    
+    .pageTit {
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .weekly {
+        height: 210px;
+        background: url('../img/event-promo-mob-img.jpg') no-repeat right top;
+        background-size: cover;
+    }
+    .offersTit {
+        font-size: 26px;
+        line-height: 1.3;
+        left: 10vw;
+        top: 132px;
+        margin: 0;
+        height: 80px;
+        width: 220px;
+    }
+    .offer-terms {
+        margin: 30px auto 10px;
+        padding-bottom: 60px;
+    }
+    
+    #promo {
+        padding-bottom: 20px;
+    }
+    .point {
+        width: 100%;
+        margin: 0;
+        position: relative;
+    }
+    .point.top-gear {
+/*        height: 380px;*/
+        margin-top: 10px;
+    }
+    .point .pointTxt {
+        height: 62px;
+        position: absolute;
+        left: 0;
+        bottom: 18px;
+    }
+    .point p {
+        display: none;
+    }
+    .point span {
+        width: 80%;
+        color: #fff;
+        font-weight: 700;
+        font-size: 15px;
+        text-shadow: 0px 0px 3px #111;
+    }
+    
+    .colorbox .boxTit {
+        font-size: 26px;
+        line-height: 1.5;
+        padding: 62px 10px;
+    }
+}
+
+
+
+
