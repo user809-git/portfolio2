@@ -275,6 +275,24 @@
     border-bottom: none;
     border-width: 0;
 }
+.helpBox .goContact a {
+    display: block;
+    width: 100%;
+    color: #0e812f;
+    text-align: center;
+    line-height: 1;
+    font-weight: 700;
+    font-size: 19px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.helpBox .goContact a:hover {
+    text-decoration: underline;
+}
+.helpBox .goContact img {
+    vertical-align: top;
+    margin-left: 16px;
+}
 /* 2 // */
 /* //내용 tab content 끝 */
 
@@ -345,6 +363,14 @@
     .helpBox > ul > li {
         width: 95%;
         margin-bottom: 30px;
+    }
+    .helpBox .goContact a {
+        line-height: 1.5;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+    .helpBox .goContact img {
+        margin-left: 0;
     }
 }
 
@@ -472,5 +498,13 @@
     }
     .help-sub {
         display: none;
+    }
+    .helpBox .goContact a {
+        line-height: 1.5;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+    .helpBox .goContact img {
+        margin-left: 0;
     }
 }
