@@ -99,6 +99,7 @@ h1.logo img {
     width: 123px;
     background-color: #1360ad;
     box-shadow: 0px 10px 30px rgba(19, 96, 173, 0.5);
+    font-weight: 700;
 }
 
 .topBtnWrap li.goGnb a {
