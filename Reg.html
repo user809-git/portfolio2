@@ -12,22 +12,6 @@
     <script src="js/jquery.easing.1.3.min.js"></script>
     <script src="sub/js/reg.js"></script>
     
-<script>
-    $(document).ready(function(){
-    
-        $(".userpsw i").click(function(){
-            $("#userpsw").toggleClass("showthis");
-
-            if($("#userpsw").hasClass("showthis")){
-                $(this).attr('class','far fa-eye').prev("input").attr('type','text');
-            } else {
-                $(this).attr('class','far fa-eye-slash').prev("input").attr('type','password');
-            }
-
-        });
-
-    });
-</script>
 </head>
 
 <body>
@@ -42,7 +26,7 @@
             <form class="userinfo" action="/">
                 <div class="username">
                     <label for="username">이메일 주소</label>
-                    <input type="text" name="username" id="username" maxlength="16" placeholder="example@domain.com" required autofocus>
+                    <input type="text" name="username" id="username" placeholder="example@domain.com" required autofocus>
                     <label for="username" class="howtomake">사용하고 있는 이메일 주소를 등록해주세요.</label>
                 </div>
                 <div class="userpsw">
