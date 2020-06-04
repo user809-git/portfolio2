@@ -11,9 +11,23 @@
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/jquery.easing.1.3.min.js"></script>
     <script src="sub/js/reg.js"></script>
-    <style>
-        
-    </style>
+
+<script>
+    $(document).ready(function(){
+    
+        $(".userpsw i").click(function(){
+            $("#userpsw").toggleClass("showthis");
+
+            if($("#userpsw").hasClass("showthis")){
+                $(this).attr('class','far fa-eye').prev("input").attr('type','text');
+            } else {
+                $(this).attr('class','far fa-eye-slash').prev("input").attr('type','password');
+            }
+
+        });
+
+    });
+</script>
 </head>
 
 <body>
@@ -325,23 +339,7 @@
             <a href="Login.html" target="_blank">레고&reg; 계정을 이미 가지고 있나요?</a>
         </div>
     </div>
-    
-<script>
-    $(document).ready(function(){
-    
-        $(".userpsw i").click(function(){
-            $("#userpsw").toggleClass("showthis");
-
-            if($("#userpsw").hasClass("showthis")){
-                $(this).attr('class','far fa-eye').prev("input").attr('type','text');
-            } else {
-                $(this).attr('class','far fa-eye-slash').prev("input").attr('type','password');
-            }
-
-        });
-
-    });
-</script>
+   
     
     
 </body>
