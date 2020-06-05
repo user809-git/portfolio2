@@ -1119,17 +1119,18 @@ footer, #foot {
     width: 25%;
 }
 .b_upper > li > p {
-    line-height: 1em;
+    line-height: 60px;
     font-size: 14px;
     text-align: center;
     font-family: 'Open Sans', 'Noto Sans KR', sans-serif;
     font-weight: 400;
     color: #ddd;
-    margin: 23px auto;
+    margin: 0 auto;
 }
 .b_upper > li > p > .downarr {
     display: inline-block;
-    margin: 3px 0 0 20px;
+    vertical-align: middle;
+    margin: -3px 0 0 20px;
 }
 .b_sub {
     position: relative;

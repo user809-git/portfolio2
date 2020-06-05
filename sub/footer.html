@@ -181,12 +181,31 @@
                     $(".ginfo_m").toggle();
                 } else return
             });
+            
+            // .bottommenu
+            var cur = 90;
+            var onn = 0;
             $(".b_upper > li").click(function(){
                 var thiswidth = parseInt($(window).width()+16);
                 
                 if (thiswidth >= 640) {
                     $(".b_sub").stop().slideToggle("fast");
-                } else return
+                } else {
+                    if (onn == 1) {
+                        cur = 90;
+                    }
+
+                    var i = $(this).index();
+                    if (cur != i) {
+                        $(".b_sub").slideUp("fast");
+                        $(this).find(".b_sub").stop().slideDown("fast");
+                        onn = 2;
+                    } else {
+                        $(this).find(".b_sub").stop().slideUp("fast");
+                        onn = 1;
+                    }
+                    cur = i;
+                }
             });
         });
         
