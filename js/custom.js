@@ -7,6 +7,12 @@ $(document).ready(function(){
         
         mainVisual.height(wh);
         
+        if($(window).height() <= 640) {
+            $("#noticeBox").hide();
+        } else if ($(window).height() > 640 && $(window).width() >= 1200) {
+            $("#noticeBox").show();
+        } else return
+        
     });
     
     

@@ -29,6 +29,20 @@
 <!--     logo/ gnb/ search / playzone   -->
     </header>
     
+    <div id="noticeBox">
+        <div class="openNo">
+            <a onclick="$(this).parent().hide();$(this).parent().parent().stop().animate({'left':'-1'});$('.noticeTxt').show();"></a>
+        </div>
+        <a class="noticeTxt" onclick="$(this).hide();$('.openNo').show();$(this).parent().stop().animate({'left':'-390'});">
+            <div class="noticex">
+                <span class="barx barx1"></span>
+                <span class="barx barx2"></span>
+            </div>
+            <p class="notice">6만원 이상 주문시 <br><b>무료배송</b>!</p>
+            <p class="notice">우리의 지역사회를 <br>최우선시 합니다.</p>
+        </a>
+    </div>
+    
     <div id="visualSlide">
         <div class="slide swiper-container">
             <div class="swiper-wrapper">
