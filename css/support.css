@@ -28,7 +28,7 @@
 }
 .pageTit .arr {
     display: inline-block;
-    vertical-align: middle !important;
+    vertical-align: baseline;
     margin-left: 18px;
 }
 
