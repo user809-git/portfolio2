@@ -87,6 +87,7 @@ h1.logo img {
     margin-left: 15px;
     height: 50px;
     box-sizing: border-box;
+    cursor: pointer;
 }
 .topBtnWrap > ul > li > a {
     height: 50px;
@@ -776,8 +777,8 @@ a.closeBtn {
 .sec:hover .secinfo {
     display: block;
     position: absolute;
-    top: 70px;
-    left: 430px;
+    top: 105px;
+    left: 400px;
 }
 .sec1 > .secimg1 {
     width: 330px;
