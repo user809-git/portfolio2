@@ -31,8 +31,10 @@
 }
 .pageTit .arr {
     display: inline-block;
-    vertical-align: middle;
     margin-left: 18px;
+}
+.pageTit .arr img {
+    vertical-align: baseline;
 }
 
 /* 카테고리 선택 .category*/

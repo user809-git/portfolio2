@@ -19,6 +19,7 @@
     color: #999;
     box-sizing: border-box;
 }
+
 .pageTit a, .pageTit a:active, .pageTit a:visited {
     color: #999;
 }
@@ -28,8 +29,10 @@
 }
 .pageTit .arr {
     display: inline-block;
-    vertical-align: middle;
     margin-left: 18px;
+}
+.pageTit .arr img {
+    vertical-align: baseline;
 }
 
 
