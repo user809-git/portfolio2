@@ -11,4 +11,8 @@ $(document).ready(function(){
         
     });
     
+    $(".logo-center").click(function(){
+        window.close();
+    });
+    
 });
