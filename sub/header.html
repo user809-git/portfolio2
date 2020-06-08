@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<body>
+
+    <div id="head">
+       <h1 class="logo"><a href="http://user809-git.github.io/portfolio2/" target="_blank"><img src="img/logo-LEGO-f.png" alt="레고"></a></h1>
+       <div class="topBtnWrap">
+           <ul>
+               <li class="goPlayzone">
+                   <a href="https://www.lego.com/ko-kr/kids" target="_blank">플레이존</a>
+               </li>
+               <li class="goGnb">
+                   <a onclick="$('#gnbPage').css('height','100%').show();"><img src="img/menuBtn.png" alt="메뉴"></a>
+               </li>
+               <li class="goSearch">
+                   <a onclick="$('#searchPage').css('height','100%').show();"><img src="img/searchBtn.png" alt="검색"></a>
+               </li>
+           </ul>
+       </div>
+    </div>
+    <div id="gnbPage">
+        <h1 class="logo"><img src="img/logo-LEGO-f.png" alt="레고"></h1>
+        <a class="closeBtn" onclick="$(this).parent().hide();"><img src="img/popupClose_0.png" alt="닫기"></a>
+        <a class="searchBtn" onclick="$('#searchPage').css('height','100vh').show();"><img src="img/searchBtn.png" alt="검색"></a>
+        <ul id="gnb">
+            <li><a href="Category.html" target="_blank">제품 카테고리</a></li>
+            <li><a href="Offers.html" target="_blank">행사 및 할인</a></li>
+            <li><a href="Support.html" target="_blank">서비스 지원</a></li>
+        </ul>
+        <ul id="mymenu">
+            <li><a href="Login.html" target="_blank">로그인</a></li>
+            <li><a href="Reg.html" target="_blank">회원가입</a></li>
+            <li><a href="https://www.lego.com/ko-kr/vip" target="_blank">VIP</a></li>
+        </ul>
+        <ul class="serviceIcon">
+            <li>
+                <a href="https://www.lego.com/en-us" target="_blank"><img src="img/icon-lang.png" alt="언어변경"><p class="iconTxt">언어<br>변경</p></a>
+            </li>
+            <li>
+                <a href="https://www.lego.com/ko-kr/life/app" target="_blank"><img src="img/icon-LegoLife.png" alt="레고라이프"><p class="iconTxt">레고&reg;<br>라이프</p></a>
+            </li>
+        </ul>
+        <ul class="gnbSns">
+           <li><a href="https://www.facebook.com/LEGO/" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+           <li><a href="https://twitter.com/LEGO_Group" target="_blank"><i class="fab fa-twitter"></i></a></li>
+           <li><a href="https://www.instagram.com/lego/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+           <li><a href="https://www.youtube.com/user/LEGO" target="_blank"><i class="fab fa-youtube"></i></a></li>
+       </ul>
+    </div>
+    <div id="searchPage">
+       <h1 class="logo"><img src="img/logo-LEGO-f.png" alt="레고"></h1>
+       <a class="closeBtn" onclick="$(this).parent().hide();"><img src="img/popupClose_0.png" alt="닫기"></a>
+       <form id="searchArea" action="/">
+           <input type="search" name="searchBox" id="searchBox" autocomplete="off" >
+           <button type="submit"></button>
+       </form>
+    </div>
+    
+    <script>
+        var header = $("header #head");
+        
+    </script>
+    
+</body>
+</html>
