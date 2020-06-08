@@ -12,7 +12,7 @@ html, body {
     margin: 0;
     padding: 0;
     position: relative;
-    font-family: 'Open Sans', 'Noto Sans', Arial, 'Noto Sans KR', '나눔고딕', 'NanumGothic', '굴림', 'Gulim' sans-serif;
+    font-family: 'Open Sans', 'Noto Sans', 'Noto Sans KR', '나눔고딕', 'NanumGothic', Arial, sans-serif;
     font-size: 18px;
     font-weight: 400;
     color: #111;
@@ -1308,7 +1308,7 @@ footer, #foot {
         font-size: 12px;
     }
     .footeradd p {
-        width: 247px;
+        width: 253px;
         margin-bottom: 16px;
     }
     .footeradd p+p {

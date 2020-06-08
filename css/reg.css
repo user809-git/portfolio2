@@ -77,9 +77,14 @@ a, a:active, a:visited {
     width: 0;
     height: 0;
     display: block;
+    visibility: hidden;
     margin-bottom: 0;
     border-radius: none;
     border: none;
+    outline: none;
+    background: none;
+    position: absolute;
+    left: -999px;
 }
 .userinfo label {
     display: block;
@@ -470,8 +475,8 @@ a.supportCenter {
         width: 14px;
     }
     .terms_lego .accountTermsInfo {
-        min-height: 560px;
-        height: 80vh;
+        min-height: 400px;
+        height: 70vh;
     }
 }
 
