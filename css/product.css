@@ -16,6 +16,8 @@ nav a, nav a:active, nav a:visited {
     box-sizing: border-box;
 }
 .pageTit {
+    font-family: 'Open Sans', 'Noto Sans KR', Arial, 'OpenSans', 'NotoSans', sans-serif;
+    font-weight: 700;
     font-size: 40px;
     line-height: 1;
     color: #999;

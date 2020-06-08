@@ -212,6 +212,7 @@ a.closeBtn {
     margin-bottom: 10px;
 }
 #gnbPage #gnb a {
+    font-family: 'Open Sans', 'Noto Sans KR', Arial, 'OpenSans', 'NotoSans', sans-serif;
     font-size: 8vh;
     font-weight: 700;
     text-shadow: 0px 6px 15px rgba(255, 255, 255, 0.5);
@@ -224,6 +225,7 @@ a.closeBtn {
 #gnbPage #mymenu a {
     font-size: 3.2vh;
     line-height: 6vh;
+    font-family: 'Open Sans', 'Noto Sans KR', Arial, 'OpenSans', 'NotoSans', sans-serif;
     font-weight: 700;
     border-bottom: 3px solid #fff;
 }
@@ -365,10 +367,14 @@ a.closeBtn {
     top: 60vh; left: 27vw;
 }
 .slide .slideCont .titleBox h3 {
+    font-family: 'Open Sans', 'Noto Sans KR', Arial, 'OpenSans', 'NotoSans', sans-serif;
+    font-weight: 700;
     font-size: 6vh;
     margin-left: -3vw;
 }
 .slide .slideCont .titleBox p {
+    font-family: 'Open Sans', 'Noto Sans KR', Arial, 'OpenSans', 'NotoSans', sans-serif;
+    font-weight: 400;
     font-size: 3.2vh;
     margin-top: 15px;
 }
@@ -526,6 +532,7 @@ a.closeBtn {
 }
 .box h2.contTit {
     font-size: 52px;
+    font-family: 'Open Sans', 'Noto Sans KR', Arial, 'OpenSans', 'NotoSans', sans-serif;
     font-weight: 700;
     line-height: 52px;
     margin-bottom: 70px;
@@ -573,6 +580,7 @@ a.closeBtn {
     left: 0;
     top: 0px;
     color: #fff;
+    font-family: 'Open Sans', 'Noto Sans KR', Arial, 'OpenSans', 'NotoSans', sans-serif;
     font-weight: 300;
 }
 .eventWrap .eventTxt strong {

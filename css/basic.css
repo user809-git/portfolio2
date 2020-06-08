@@ -212,6 +212,7 @@ a.closeBtn {
 }
 #gnbPage #gnb a {
     font-size: 8vh;
+    font-family: 'Open Sans', 'Noto Sans KR', Arial, 'OpenSans', 'NotoSans', sans-serif;
     font-weight: 700;
     text-shadow: 0px 6px 15px rgba(255, 255, 255, 0.5);
 }
@@ -223,6 +224,7 @@ a.closeBtn {
 #gnbPage #mymenu a {
     font-size: 3.2vh;
     line-height: 6vh;
+    font-family: 'Open Sans', 'Noto Sans KR', Arial, 'OpenSans', 'NotoSans', sans-serif;
     font-weight: 700;
     border-bottom: 3px solid #fff;
 }
