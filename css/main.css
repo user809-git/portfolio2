@@ -625,16 +625,29 @@ a.closeBtn {
 }
 .categWrap li {
     display: inline-block;
-    position: relative;
-    margin: 0;
+    height: 120px;
+    background: #fff;
+    box-shadow: 0px 0px 15px #e1e1e1;
+    border-radius: 60px;
+    margin-right: 5%;
 }
-.categWrap li a {
-    display: block;
-    height: 160px;
+.categWrap .recom1 {
+    width: 32%;
 }
-.categWrap li a img {
+.categWrap .recom2 {
+    width: 24%;
+}
+.categWrap .recom3 {
+    width: 32%;
+    margin-right: 0;
+}
+.categWrap li p {
     width: 100%;
-    height: 160px;
+    height: 100%;
+    line-height: 120px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
 }
 
         /* 인기제품 hot items */

@@ -26,6 +26,7 @@
     #noticeBox .openNo {
         display: block;
         position: absolute;
+        
         right: 0;
         top: 43px;
         cursor: pointer;
@@ -194,25 +195,30 @@
     }
     .categWrap li {
         display: block;
-        margin: 0 auto;
-    }
-    .recom1 {
-        width: 201px;
-    }
-    .recom2 {
-        width: 169px;
-    }
-    .recom3 {
-        width: 201px;
-    }
-    .categWrap li a {
         height: 100px;
-        width: 100%;
+        margin: 0 auto;
+        background: #fff;
+        box-shadow: 0px 0px 15px #e1e1e1;
+        border-radius: 50px;
+        margin-bottom: 20px;
     }
-    .categWrap li a img {
+    .categWrap .recom1 {
+        width: 180px;
+    }
+    .categWrap .recom2 {
+        width: 156px;
+    }
+    .categWrap .recom3 {
+        width: 180px;
+        margin: 0 auto 0;
+    }
+    .categWrap li p {
         width: 100%;
         height: 100%;
-        min-height: 100px;
+        line-height: 100px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 24px;
     }
         /*  인기제품 hot item */
     .hotiWrap {
@@ -906,25 +912,30 @@
     }
     .categWrap li {
         display: block;
+        height: 80px;
         margin: 0 auto;
+        background: #fff;
+        box-shadow: 0px 0px 15px #e1e1e1;
+        border-radius: 40px;
+        margin-bottom: 20px;
     }
-    .recom1 {
-        width: 210px;
+    .categWrap .recom1 {
+        width: 160px;
     }
-    .recom2 {
-        width: 169px;
+    .categWrap .recom2 {
+        width: 136px;
     }
-    .recom3 {
-        width: 210px;
+    .categWrap .recom3 {
+        width: 160px;
+        margin: 0 auto 0;
     }
-    .categWrap li a {
-        height: 100px;
-        width: 100%;
-    }
-    .categWrap li a img {
+    .categWrap li p {
         width: 100%;
         height: 100%;
-        min-height: 100px;
+        line-height: 80px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 20px;
     }
             /* 인기제품 hot item */
     .hotiWrap {
