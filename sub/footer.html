@@ -191,7 +191,7 @@
                 var thiswidth = parseInt($(window).width()+16);
                 
                 if (thiswidth >= 640) {
-                    $(".b_sub").stop().slideToggle("fast");
+                    $(".b_sub").stop().slideToggle();
                 } else {
                     if (onn == 1) {
                         cur = 90;
@@ -199,11 +199,11 @@
 
                     var i = $(this).index();
                     if (cur != i) {
-                        $(".b_sub").slideUp("fast");
-                        $(this).find(".b_sub").stop().slideDown("fast");
+                        $(".b_sub").slideUp();
+                        $(this).find(".b_sub").stop().slideDown();
                         onn = 2;
                     } else {
-                        $(this).find(".b_sub").stop().slideUp("fast");
+                        $(this).find(".b_sub").stop().slideUp();
                         onn = 1;
                     }
                     cur = i;
