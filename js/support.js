@@ -22,6 +22,13 @@ $(document).ready(function(){
         $(".tabCont>ul>li").removeClass('active');
         $(".tabCont>ul>li").eq(1).addClass('active');
     });
+    $(".suppBtn .toFaq").click(function(){
+        
+        $(".tab>ul>li").removeClass('active');
+        $(".tab>ul>li").eq(1).addClass('active');
+        $(".tabCont>ul>li").removeClass('active');
+        $(".tabCont>ul>li").eq(1).addClass('active');
+    });
     
     
     var cur = 90;

@@ -199,9 +199,16 @@
     background: #f9f9f9;
     box-shadow: 0px 0px 16px #ddd;
     border-radius: 20px;
+}
+.quick .suppBtn li a {
+    display: block;
+    width: 100%;
+    border-radius: 20px;
+    
     text-align: center;
     font-size: 19px;
     font-weight: 700;
+    color: #111;
 }
     /* 개인정보 보호 정책 */
 .terms .suppTxt {
@@ -294,8 +301,8 @@
     color: #0e812f;
     border-bottom: 2px solid #0e812f;
     
-    background: url('../img/arr_green.png') no-repeat 93% center;
-    background-size: 42px;
+    background: url('../img/arrDown_d.png') no-repeat 93% center;
+    background-size: 12px;
 }
 .help-sub > li {
     display: block;
@@ -318,7 +325,7 @@
     line-height: 1;
     font-weight: 700;
     font-size: 19px;
-    margin-top: 20px;
+    margin-top: 40px;
     cursor: pointer;
 }
 .helpBox .goContact a:hover {
@@ -410,7 +417,7 @@
     }
     .helpBox .goContact a {
         line-height: 1.5;
-        margin-top: 20px;
+        margin-top: 40px;
         cursor: pointer;
     }
     .helpBox .goContact img {
@@ -555,7 +562,7 @@
     }
     .helpBox .goContact a {
         line-height: 1.5;
-        margin-top: 20px;
+        margin-top: 32px;
         cursor: pointer;
     }
     .helpBox .goContact img {
