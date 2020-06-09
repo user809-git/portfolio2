@@ -38,7 +38,7 @@
 .pageTit .arr img {
     vertical-align: baseline;
 }
-
+.click-to { cursor: pointer; }
 
 /* 메뉴 탭 menu tab */
 .tab {
@@ -120,6 +120,7 @@
     border-radius: 20px;
     background: url('../img/plus-0.png') no-repeat 90% center;
     background-size: 20px;
+    position: relative;
 }
 .contact .suppBtn li.wide {
     width: 96%;
@@ -129,7 +130,7 @@
     box-sizing: border-box;
     background-image: none;
 }
-.contact .suppBtn li.wide a {
+.contact .suppBtn li.wide > a {
     float: right;
     display: block;
     width: 110px;
@@ -157,6 +158,33 @@
     margin-top: 10px;
     display: inline-block;
 }
+/*<!-- ** modal -->*/
+.suppPop {
+    display: none;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    left: 0;
+    top: 45px;
+    z-index: 20;
+}
+.suppPop > .poptxt {
+    box-sizing: border-box;
+    padding: 20px;
+    width: 350px;
+    height: 120px;
+}
+.suppPop > .poptxt > p {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.5;
+    color: #f1f1f1;
+}
+.suppPop > .poptxt > span {
+    color: #aaa;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
     /* 이용가능한 서비스 */
 .quick .suppBtn {
     margin-left: 3%;
@@ -339,6 +367,15 @@
         margin-top: 16px;
         line-height: 1.2;
     }
+    .suppPop > .poptxt {
+        width: 430px;
+    }
+    .postTo {
+        left: -224px;
+    }
+    .postTo > .poptxt {
+        text-align: right;
+    }
         /* 이용가능한 서비스 */
     .quick .suppBtn {
         margin-left: 0;
@@ -442,6 +479,16 @@
         margin-top: 16px;
         line-height: 1.2;
     }
+    .suppPop > .poptxt {
+        width: 83vw;
+    }
+    .suppPop > .poptxt > p {
+        font-size: 15px;
+    }
+    .postTo > .poptxt {
+        height: 140px;
+    }
+    
         /* 이용가능한 서비스 */
     .quick .suppBtn {
         margin-left: 0;

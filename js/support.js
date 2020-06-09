@@ -24,9 +24,27 @@ $(document).ready(function(){
     });
     
     
-    // 2 tab
     var cur = 90;
     var onn = 0;
+    // 1 tab
+    $(".suppBtn .click-to").click(function(){
+        var j = $(this).index();
+        if (onn == 1) {
+            cur = 90;
+        }
+        
+        if (cur != j) {
+            $(".suppBtn .click-to").find(".suppPop").hide();
+            $(this).find(".suppPop").stop().slideDown();
+            onn = 2;
+        } else {
+            $(this).find(".suppPop").stop().slideUp();
+            onn = 1;
+        }
+        cur = j;
+    });
+    
+    // 2 tab
     $(".helpBox > ul > li").click(function(){
         if(parseInt($("#foot").css('width')) <= 640) {
            
