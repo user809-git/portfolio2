@@ -73,6 +73,10 @@ nav a, nav a:active, nav a:visited {
     font-weight: 700;
     font-size: 18px;
     text-align: center;
+    color: #111;
+}
+.option > li > a:visited, .option > li > a:active {
+    color: #111;
 }
 .option > li:first-child > a {
     color: #999;
