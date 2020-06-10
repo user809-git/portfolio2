@@ -489,6 +489,9 @@ ul.list.active {
         line-height: 50px;
         color: #999;
     }
+    .showTop:active, .showTop:visited {
+        color: #999;
+    }
     .popup_opt > .optEl > a {
         display: block;
         width: 100%;
