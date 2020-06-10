@@ -344,9 +344,15 @@
     .mob {
         display: none;
     }
+    .mob2 {
+        display: none;
+    }
 }
 
 @media all and (min-width:641px) and (max-width:1200px) {
+    .mob2 {
+        display: none;
+    }
     #content {
         width: 100%;
         max-width: 600px;
@@ -395,6 +401,9 @@
     .quick .suppBtn li:nth-child(5),
     .quick .suppBtn li:nth-child(6) {
         margin-bottom: 0;
+    }
+    .quick .suppBtn li a {
+        font-size: 15px;
     }
         /* 도움말 */
     .helper .suppTxt p {
