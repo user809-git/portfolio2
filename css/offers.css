@@ -71,6 +71,7 @@
     font-size: 18px;
     font-weight: 700;
     color: #777;
+    margin-bottom: 8px;
 }
 .offer-terms p {
     font-size: 14px;
@@ -78,9 +79,9 @@
     font-weight: 400;
     letter-spacing: 1px;
     word-break: keep-all;
-    color: #777;
-    
+    color: #777; 
 }
+.offer-terms hr { margin: 5px 0;}
 .offer-terms p ins {
     font-weight: 400;
     text-decoration: underline;
