@@ -427,9 +427,9 @@ a.closeBtn {
 
 /*scrolldown animation*/
 @keyframes Sc {
-    0% { transform: translateY(-40px); }
+    0% { transform: translateY(-36px); }
     50% { transform: translateY(-30px); }
-    100% { transform: translateY(-40px); }
+    100% { transform: translateY(-36px); }
 }
 .scroll-down {
     cursor: pointer;
@@ -457,7 +457,7 @@ a.closeBtn {
     background-color: #fff;
     text-align: center;
     margin-left: 24px;
-    transform: translateY(-40px);
+    transform: translateY(-36px);
     animation: Sc 1s infinite ease-in-out;
 }
 .scroll-down:before {
