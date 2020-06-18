@@ -380,6 +380,7 @@ a.closeBtn {
 }
 .slide .slideCont .titleBox a.goBtn {
     background: url('../img/goBtn.png') no-repeat center;
+    background-size: cover;
     display: block;
     width: 57px;
     height: 57px;

@@ -776,20 +776,22 @@
         text-align: center !important;
     }
     .slide .slideCont .titleBox h3 {
-        font-size: 9.3vw !important;
+        font-size: 9.2vw !important;
         margin: 0 !important;
         line-height: 1.2;
     }
-    .titleBox .goBtn {
-        display: block !important;
+    .slide .slideCont .titleBox a.goBtn {
+        display: block;
         position: absolute;
-        top: -70px !important;
+        top: -70px;
         bottom: 0;
         left: 60%;
+        width: 52px;
+        height: 52px;
     }
     .slide .slideCont .titleBox p {
         visibility: hidden;
-        font-size: 7.5vw !important;
+        font-size: 7.4vw !important;
         line-height: 20px;
         margin: 0;
         height: 30px;
