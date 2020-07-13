@@ -299,6 +299,23 @@ a.closeBtn {
     float: right;
     margin-left: 20px;
 }
+.snsQuick li {
+    height: 30px;
+    float: right;
+    margin-left: 20px;
+}
+.snsQuick a.yt i:hover {
+    color: #FD3832;
+}
+.snsQuick a.in i:hover {
+    color: #F91964;
+}
+.snsQuick a.tw i:hover {
+    color: #43BDF0;
+}
+.snsQuick a.fb i:hover {
+    color: #18AFFE;
+}
 
 .letterSub {
     z-index: 110;
