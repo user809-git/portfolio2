@@ -852,7 +852,7 @@
             /* 이벤트 event */
     .eventWrap {
         height: 660px;
-        width: 100vw;
+        width: 100%;
         position: relative;
     }
     .eventWrap .eventImg {
