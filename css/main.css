@@ -740,7 +740,7 @@ a.closeBtn {
 .spotlWrap {
     display: block;
     position: relative;
-    height: 680px;
+    height: auto;
     width: 100%;
     max-width: 942px;
     margin: 0px auto;
@@ -750,49 +750,27 @@ a.closeBtn {
     width: 100%;
     height: 330px;
     overflow: hidden;
-    position: absolute;
     box-sizing: border-box;
+    position: relative;
     margin: 0;
+    margin-bottom: 20px;
     border-radius: 160px;
     transition: all .5s;
 }
 .sec1 {
     background-color: #6dcfea;
-    top: 0;
-    left: 0;
     z-index: 30;
 }
 .sec2 {
     background-color: #d1de3b;
-    top: 350px;
-    left: 0;
     z-index: 10;
 }
-/*
-.sec2:hover {
-    background-color: #d1de3b;
-    top: 350px;
-    left: 0px;
-}
-*/
+
 .sec3 {
     background-color: #e76905;
-    top: 0;
-    left: 612px;
+    margin-bottom: 0;
     z-index: 9;
 }
-.sec3:hover {
-    background-color: #e76905;
-    top: 0;
-    left: 0px;
-}
-/*
-.sec:hover {
-    z-index: 30;
-    border-radius: 160px;
-    width: 100%;
-}
-*/
 .secinfo {
     display: block;
     position: absolute;
@@ -809,19 +787,9 @@ a.closeBtn {
     display: block;
     width: 500px;
 }
-.sec:hover .secinfo {
-    display: block;
-    position: absolute;
-    top: 105px;
-    left: 400px;
-}
 .sec1 > .secimg1 {
     width: 330px;
     height: 330px;
-    background: url('../img/spotlight-friends.jpeg') no-repeat center bottom;
-    background-size: cover;
-}
-.sec1:hover > .secimg1 {
     background: url('../img/spotlight-friends.jpeg') no-repeat center bottom;
     background-size: cover;
 }
@@ -831,17 +799,9 @@ a.closeBtn {
     background: url('../img/spotlight-series20.jpeg') no-repeat center;
     background-size: cover;
 }
-.sec2:hover > .secimg2 {
-    background: url('../img/spotlight-series20.jpeg') no-repeat center;
-    background-size: cover;
-}
 .sec3 > .secimg3 {
     width: 330px;
     height: 330px;
-    background: url('../img/spotlight-classic-55.jpg') no-repeat center;
-    background-size: cover;
-}
-.sec3:hover > .secimg3 {
     background: url('../img/spotlight-classic.jpeg') no-repeat center;
     background-size: cover;
 }

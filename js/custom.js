@@ -113,8 +113,8 @@ $(document).ready(function(){
     // visual slide swiper
     mainVisual.on("mousemove",function(e){
         // 변수에 마우스 커서의 x축, y축 위치 저장
-        var posX = e.pageX;
-        var posY = e.pageY;
+        var posX = e.pageX / 2;
+        var posY = e.pageY / 2;
 
         $(".titleBox1").css({"left":210+(posX/10), "top":400+(posY/10) });
         $(".sImg11").css({"left":20+(posX/6), "top":20+(posY/3) });
