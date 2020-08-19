@@ -231,6 +231,9 @@ a.closeBtn {
 }
 #searchPage #searchArea button {
     display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
     width: 47px;
     height: 90px;
     background-color: transparent;
