@@ -1,0 +1,317 @@
+@charset "UTF-8"
+
+.contentbox a, .contentbox a:active, .contentbox a:visited {
+    color: #333;
+}
+.contentbox {
+    width: 942px;
+/*    height: 1000px;*/
+    margin: 0 auto 70px;
+    position: relative;
+    top: 140px;
+    background-color: #f9f9f9;
+    box-shadow: 0px -10px 50px #ddd;
+    padding: 42px 0 0;
+    box-sizing: border-box;
+}
+/* #reward */
+.pageTit {
+    font-family: 'Open Sans', 'Noto Sans KR', Arial, 'OpenSans', 'NotoSans', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1;
+    color: #999;
+    box-sizing: border-box;
+    margin: 0 71px;
+}
+.pageTit > a, .pageTit > a:active, .pageTit > a:visited {
+    color: #999 !important;
+}
+.pageTit a:hover {
+    color: #999;
+    text-decoration: underline;
+}
+.pageTit .arr {
+    display: inline-block;
+    margin-left: 18px;
+}
+.pageTit .arr img {
+    vertical-align: baseline;
+}
+.topWrap {
+    position: absolute;
+    top: 42px;
+    right: 69px;
+}
+.topWrap li {
+    display: inline-block;
+    vertical-align: top;
+}
+.topWrap li:first-child {
+    margin-right: 45px;
+}
+.topWrap li span {
+    display: block;
+    color: #1360ad;
+    font-size: 14px;
+    font-weight: 700;
+}
+.howJoin {
+    width: 100%;
+    margin-top: 50px;
+    transition: all 0.5s;
+}
+.joinOptTab {
+    width: 100%;
+    height: 40px;
+}
+.joinOptTab ul {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #ddd;
+    font-size: 0;
+}
+.joinOptTab ul li {
+    display: inline-block;
+    width: 33.33%;
+    box-sizing: border-box;
+    text-align: center;
+    color: #aaa;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 40px;
+}
+.joinOptTab ul li.on {
+    color: #fff;
+    background-color: #146ec9;
+    border-radius: 7px 7px 0 0;
+}
+.joinOption {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.joinOption ul {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 0;
+}
+.joinOption ul li {
+    display: none;
+    width: 100%;
+    padding: 1.5em 0 2em;
+    background-color: #146ec9;
+    color: #fff;
+    text-align: center;
+    font-size: 1rem;
+}
+.joinOption ul li.on {
+    display: block;
+}
+.joinOption ul li p {
+    margin-bottom: 1em;
+}
+.joinOption ul li p:nth-child(2) {
+    font-weight: 300;
+}
+.joinOption ul li a {
+    padding: 0.5em 1.5em;
+    border-radius: 10px;
+    border: 2px solid;
+}
+/* #info */
+#info {
+    margin: 0 auto 190px;
+    padding-top: 0;
+}
+article {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+article > strong {
+    display: block;
+    margin-bottom: 0.9em;
+    font-size: 2rem;
+}
+.art1 {
+/*    height: 520px;*/
+    padding: 16rem 90px 3.5rem;
+    background: url(../img/vip-img-card.jpg) no-repeat 50% 50% / cover;
+    font-size: 1.1rem;
+}
+.art2 {
+    width: 100%;
+    padding: 110px 73px;
+    font-size: 0;
+}
+.art2 .box {
+    display: inline-block;
+    width: 50%;
+    padding: 27px 0;
+    vertical-align: top;
+    color: #d9215e;
+    text-align: center;
+    font-size: 1rem;
+}
+.art2 .box i {
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 64px;
+}
+.art2 .box span {
+    display: block;
+    margin-bottom: 0.9em;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+.art3 {
+    width: 100%;
+    padding: 110px 0 94px 50%;
+    background: url(../img/vip-img-2x.jpg) no-repeat 10% 50% / 50%;
+    font-size: 1.1rem;
+}
+.art3 a {
+    color: #111;
+    display: inline-block;
+    margin-top: 2em;
+    margin-left: 5em;
+    padding: 0.5em 1.5em;
+    border-radius: 10px;
+    border: 3px solid;
+    font-weight: 700;
+}
+.art4 {
+    background-color: #1d2836;
+    background-image: url(../img/vip-img-howto.png);
+    background-repeat: no-repeat;
+    background-position: 50% 90%;
+    background-size: 45%;
+    padding: 2rem 0 15rem;
+    color: #fff;
+    text-align: center;
+}
+.art4 strong {
+    font-size: 1.5rem;
+}
+.art4 .box {
+    margin-bottom: 1.5rem;
+}
+.art4 .box span {
+    display: block;
+    margin-bottom: 0.5em;
+    font-size: 1.2em;
+}
+.art4 .box p {
+    font-weight: 300;
+    font-size: 0.9em;
+}
+
+@media all and (min-width:1201px) {
+    .mob {
+        display: none;
+    }
+}
+
+@media all and (min-width:641px) and (max-width:1200px) {
+    .contentbox {
+        width: 100%;
+        max-width: 600px;
+    }
+    
+    .joinOptTab ul li {
+        font-size: 0.9rem;
+    }
+    .art1 {
+        background-position: 60% 0%;
+        background-size: 150%;
+    }
+    .art2 .box {
+        display: block;
+        width: 100%;
+    }
+    .art3 {
+        background-position: 50% 0%;
+        background-size: 60%;
+        padding-left: 0;
+        padding-top: 16rem;
+        text-align: center;
+    }
+    .art3 a {
+        margin-left: 0;
+    }
+    .art4 {
+        background-size: 60%;
+    }
+}
+
+@media all and (max-width:640px) {
+    .hide {
+        display: none;
+    }
+    .contentbox {
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0 auto 110px;
+        top: 110px;
+        padding: 20px 0 0;
+    }
+    
+    .pageTit {
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .topWrap {
+        position: relative;
+        right: 0;
+        left: 0;
+        top: 25px;
+        text-align: center;
+    }
+    .joinOptTab {
+        height: 120px;
+    }
+    .joinOptTab ul li {
+        display: block;
+        width: 100%;
+        font-size: 0.85rem;
+    }
+    .joinOptTab ul li.on {
+        background-color: #333;
+        border-radius: 0;
+    }
+    .art1 {
+        padding-top: 12rem;
+        padding-left: 18px;
+        padding-right: 18px;
+        background-position: 50% 0%;
+        background-size: 150%;
+        font-size: 1rem;
+    }
+    .art2 {
+        padding: 60px 18px;
+    }
+    .art2 .box {
+        display: block;
+        width: 100%;
+    }
+    .art3 {
+        background-position: 60% 0%;
+        background-size: 80%;
+        padding-left: 18px;
+        padding-right: 18px;
+        padding-top: 16rem;
+        text-align: center;
+    }
+    .art3 a {
+        margin-left: 0;
+    }
+    .art4 {
+        padding-left: 18px;
+        padding-right: 18px;
+        background-size: 70%;
+    }
+}
