@@ -57,7 +57,7 @@ LEGO Korea 레고 코리아
 - 📄 index.html
 
 ***
-# 👀 Code Self-review
+# 👀 Self Code-review
 ## index.html에 사용된 효과들
 
 ### 1. 슬라이드 - swiper.js
@@ -166,7 +166,6 @@ $(window).scroll(function(){
     
 });
 ```
-
 
 
 ***
