@@ -176,5 +176,5 @@ $(window).scroll(function(){
 
 ***
 
-## 👋 [이전 프로젝트로 넘어가기 -> Design Samsung](https://github.com/user809-git/portfolio1)
+## 👈 [이전 프로젝트 보기 -> Design Samsung](https://github.com/user809-git/portfolio1)
 ## 👋 [다음 프로젝트로 넘어가기 (팀프로젝트)](https://github.com/user809-git/portfolioA)
