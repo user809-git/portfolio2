@@ -1,296 +1,180 @@
-> *no framework, no Library*
-
 LEGO Korea 레고 코리아
 =========
 
 # 📌 About this Portfolio
 
-### 👉 [웹 페이지 보러가기](https://user809-git.github.io/portfolio1/index.html)
-### <small>(간단)</small> 작업 설명
-- 기존 사이트의 레이아웃 참고 + 내용(& 서브 페이지)
-- 세부 콘텐츠 페이지 없음
+### 👉 [웹 페이지 보러가기](https://user809-git.github.io/portfolio2/index.html)
+### <small>(간단한)</small> 작업 과정
+- 원본 페이지의 콘텐츠 그룹화, 정리
+- 컨셉에 맞춘 레이아웃 구조 + 세부 영역 디자인 (PC기준)
+- 디자인에 맞춰 html, css, js 문서 작성
+- 미디어 쿼리 작성
+- 오류 수정, 크로스 브라우징
 
-### 참고 페이지
-- [Design Samsung](http://design.samsung.com/kr/)
-- [Samchully Asset Management](http://www.sig-fund.com/)
+### 원본 페이지
+- [LEGO® Shop Korea](https://www.lego.com/ko-kr)
 
 ***
 
 ## 파일 미리보기
 - 📁 css
-  - 🅰 (web-font files)
+  - 📄 basic.css
+  - 📄 category.css
+  - 📄 login.css
   - 📄 main.css
-  - 📄 media.css
-  - 📄 nanumsquare.css
+  - 📄 offers.css
+  - 📄 product.css
+  - 📄 reg.css
   - 📄 style.css
+  - 📄 support.css
+  - 📄 swiper.min.css
+  - 📄 vip.css
 - 📁 img
   - 📷 (images)
 - 📁 js
   - 📄 custom.js
   - 📄 jquery-3.4.1.min.js
   - 📄 jquery.easing.1.3.min.js
+  - 📄 offers.js
   - 📄 prefixfree.min.js
+  - 📄 product.js
+  - 📄 reg.js
+  - 📄 support.js
+  - 📄 swipper.min.js
+  - 📄 vip.js
 - 📁 sub
-  - 📁 css
-    - 🅰 (web-font files)
-    - 📄 reset.css
-    - 📄 style0.css
-    - 📄 style1.css
-    - 📄 style2.css
-    - 📄 style3.css
-    - 📄 style4_0.css
   - 📁 img
     - 📷 (images)
-  - 📁 js
-    - 📄 custom1.js
-    - 📄 custom3.js
-    - 📄 custom4.js
-  - 📄 011.html
-  - 📄 012.html
-  - 📄 013.html
-  - 📄 014.html
   - 📄 footer.html
   - 📄 header.html
+- 📄 Category.html
+- 📄 Login.html
+- 📄 NewProduct.html
+- 📄 Offers.html
+- 📄 Reg.html
+- 📄 Support.html
+- 📄 Vip.html
 - 📄 index.html
 
 ***
 # 👀 Code Self-review
-## 효과들
+## index.html에 사용된 효과들
 
-### *.css + *.js
-1. 스크롤에 따라 등장   
+### 1. 슬라이드 - swiper.js
+  👉 모바일에서도 쉽게 넘길 수 있도록 swiper.js 이용   
+```js
+<script src="js/swiper.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        speed: 500,
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        on: {
+            slideChangeTransitionStart: function(){
+                $('.swiper-slide').find('.ani').removeClass("Fa");
+                $('.swiper-slide-active').find('.ani').addClass("Fa");
+            }
+        }
+    });
+</script>
+```
+### 2. 마우스 커서 움직에 따른 요소 움직임
+  👉 슬라이드의 각 페이지 마다 다른 아이템들이 등장, 마우스의 움직에 따라 반응
+```js
+// 슬라이드의 아이템들
+// 마우스 커서가 슬라이드 영역 위에 있을 떄만 움직이도록 함
+
+mainVisual.on("mousemove",function(e){
+
+    // 변수에 마우스 커서의 x축, y축 위치 저장
+    var posX = e.pageX / 2;
+    var posY = e.pageY / 2;
+
+    $(".titleBox1").css({"left":210+(posX/10), "top":400+(posY/10) });
+    $(".sImg11").css({"left":20+(posX/6), "top":20+(posY/3) });
+    $(".sImg12").css({"right":130+(posX/6), "bottom":-40+(posY/3) });
+
+    $(".titleBox2").css({"left":260+(posX/9), "top":520+(posY/10) });
+    $(".sImg21").css({"left":470+(posX/5), "top":180+(posY/3) });
+    $(".sImg22").css({"left":380+(posX/9), "top":200+(posY/7) });
+    $(".sImg23").css({"right":220+(posX/5), "top":200+(posY/5) });
+
+    $(".titleBox3").css({"right":210+(posX/11), "top":310+(posY/9) });
+    $(".sImg31").css({"left":210+(posX/6), "bottom":30+(posY/6) });
+    $(".sImg32").css({"left":490+(posX/3), "bottom":100+(posY/5) });
+    $(".sImg33").css({"right":200+(posX/5), "bottom":270+(posY/5) });
+
+    $(".titleBox4").css({"left":450+(posX/7), "top":570+(posY/10) });
+    $(".sImg41").css({"right":-20+(posX/5), "top":-80+(posY/3) });
+});
+```
+
+### 3. 패럴랙스 효과 (index.html)  
   👉 jQuery사용   
-  👉 scrollTop에 따라 해당하는 요소에 `addClass('up')`   
-  👇 custom.js (index.html에 적용)
+  👉 패럴랙스로 움직여야 하는 요소들(각 박스의 타이틀, 내용 등)을 각자 조절   
 ```js
-// 2 contents ---------------------------------------------//
+// 콘텐츠 박스 scroll-parallax
 
-    var windowheight = $(window).height();
-    var delayPosition = 100;
+// 각 콘텐츠 영역의 타이틀과 내용 박스
+var sec1tit = $(".eventBox .contTit").offset().top;
+var sec2tit = $(".categBox .contTit").offset().top;
+var sec3tit = $(".hotiBox .contTit").offset().top;
+var sec4tit = $(".seriesBox .contTit").offset().top;
+var sec5tit = $(".spotlBox .contTit").offset().top;
+
+var sec1item = $(".eventBox .eventWrap").offset().top;
+var sec2item = $(".categBox .categWrap").offset().top;
+var sec3item = $(".hotiBox .hotiWrap").offset().top;
+var sec4item = $(".seriesBox .seriesWrap").offset().top;
+var sec5item = $(".spotlBox .spotlWrap").offset().top;
+
+$(window).scroll(function(){
     
-    $(window).scroll(function() {
-        var content2 = $(".contents.under");
-        var content3 = $(".contents.third");
-        var content4 = $(".contents.fourth");
-        var content5 = $(".contents.last");
-        var slide = $("#slide");
-
-        // 화면 맨 에서 delaPosition(100)만큼 위를 기준으로 -> position
-        var position = $(this).scrollTop() + windowheight - delayPosition;
-        
-        if(position > content2.offset().top) {
-            content2.addClass("up");
-        }
-        if(position > content3.offset().top) {
-            content3.addClass("up");
-        }
-        if(position > content4.offset().top) {
-            content4.addClass("up");
-        }
-        if(position > content5.offset().top) {
-            content5.addClass("up");
-        }
-        if(position > slide.offset().top) {
-            slide.addClass("up");
-        }
-    });
-```
-
-2. 슬라이드 - index.html   
-  👉 _not infinite_   
-  👉 슬라이드의 처음과 마지막 페이지에서 다음/이전이 없는 화살표는 비활성화 (main.css, custom.js)
-```css
-/* #next, #prev 기본 opacity: 0.3;*/
-#next.active, #prev.active {
-    opacity: 0.9;
-    display: block;
-    cursor: pointer;
-}
-
-#slideBox {
-    position: relative;
-    top: 0;
-    width: 100%;
-    height: 740px;
-    margin: 0 auto;
-    overflow: hidden;
-    z-index: 10;
-}
-#slideBox ul {
-    position: absolute;
-    width: 400%;
-}
-#slideBox li {
-    position: absolute;
-    width: 25%; /* ul의 1/4이어야 하기 때문에 (ul의) 25% */
-    height: 740px;
-    float: left;
-}
-.news1 {
-    background-image: url('../img/news1-1.jpg');
-    left: 0;
-}
-.news2 {
-    background-image: url('../img/news2-1.jpg');
-    left: 1200px;
-}
-.news3 {
-    background-image: url('../img/news3-1.jpg');
-    left: 2400px;
-}
-.news4 {
-    background-image: url('../img/news4-1.jpg');
-    left: 3600px;
-}
-#slideBox > ul > li {
-    background-size: cover;
-    background-position: center center;
-}
-```
-```js
-var slideBox = $("#slideBox>ul");
-var news = slideBox.find(">li");
-var titles = $(".subTitle");
-var next = $("#next");
-var prev = $("#prev");
-
-var newsWidth = news.innerWidth();
-var slideLength = news.length;
-
-var current = 0;
-
-next.on("click", function(){       
-    prev.addClass("active");
-    move();
+    var value = $(this).scrollTop() + wh/2;
+    var sec1 = parseInt($(".eventBox").offset().top);
+    var sec2 = parseInt($(".categBox").offset().top);
+    var sec3 = parseInt($(".hotiBox").offset().top);
+    var sec4 = parseInt($(".seriesBox").offset().top);
+    var sec5 = parseInt($(".spotlBox").offset().top);
     
-    if(current == slideLength-1) {
-        next.removeClass();
-    }
-});
-prev.on("click", function(){
-    next.addClass("active");
-    pre_move();
+    var move1 = (sec1tit - value) * 0.1;
+    var move2 = (sec2tit - value) * 0.1;
+    var move3 = (sec3tit - value) * 0.1;
+    var move4 = (sec4tit - value) * 0.1;
+    var move5 = (sec5tit - value) * 0.1;
     
-    if(current == 0) {
-        prev.removeClass();
-    }
-});
+    $(".eventBox .contTit").stop().animate({"top": move1*0.5});
+    $(".eventBox .eventWrap").stop().animate({"top": move1+5});
 
-function move() {
-    var n = current+1;
-    if(current == slideLength-1) return;
-    
-    var next1 = -1*n*newsWidth;
-    var moveFigure = next1 + "px";
-    
-    slideBox.stop().animate({"left": next1});
-    current = n;
-}
-function pre_move() {
-    var n = current-1;
-    if(current == 0) return;
-    
-    var prev1 = -1*n*newsWidth;
-    var moveFigure = prev1 + "px";
-    
-    slideBox.stop().animate({"left": prev1});
-    current = n;
-}
-```
+    $(".categBox .contTit").stop().animate({"top": move2*0.5});
+    $(".categBox .categWrap").stop().animate({"top": move2+5});
 
-3. class를 분리하여 원하는 레이아웃으로 볼 수 있도록 (014.html, style4_0.css, custom4.js)   
-  👉 default class = list   
-  <small>_❓ 왜 container에 class를 한 번만 붙여서 만들지 않았을까..?_</small>
-```html
-<div id="container">
-  <section class="target ready list">
-      <!-- 1 -->
-      <div class="imgBox">
-          <img src="../sub/img/content401.jpg" alt="2020 iF 디자인어워드">
-      </div>
-      <div class="txtBox">
-          <h3>2020 iF 디자인어워드</h3>
-          <span>Feb 12, 2020</span>
-      </div>
-  </section>
+    $(".hotiBox .contTit").stop().animate({"top": move3*0.5});
+    $(".hotiBox .hotiWrap").stop().animate({"top": move3+7});
 
-...
-</div>
-```
-```css
-/* thumnail 썸네일 화면 */
-section.thum {
-    margin-bottom: 100px;
-    width: 49.5%;
-    float: left;
-    position: relative;
-    margin-right: 1%;
+    $(".seriesBox .contTit").stop().animate({"top": move4*0.5});
+    $(".seriesBox .seriesWrap").stop().animate({"top": move4+5});
+    $(".s-prev-arr").stop().animate({"top": 115+move4*0.2});
+    $(".s-next-arr").stop().animate({"top": 115+move4*0.2});
     
-    transition: 0.3s;
-    transition-delay: 0.1s;
-}
-
-...
-
-/* list board 리스트 화면 */
-section.list {
-    width: 100%;
-    height: 250px;
-    position: relative;
-    display: table-row;
- 
-    transition: 0.3s;
-    transition-delay: 0.1s;
-}
-
-...
-```
-```js
-var listBtn = $("#howToShow .list_i");
-var thumBtn = $("#howToShow .thum_i");
-
-var container = $("#container");
-var section = container.find("section");
-var sectionList = container.find("section.list");
-var sectionThum = container.find("section.thum");
-
-sectionList.each(function(){
-    var sLength = section.length;
-    var listNum = Math.abs($(this).index() - sLength);
-    $(this).prepend("<div class='list_num'>" + listNum + "</div>");
-});
-
-listBtn.click(function(){
+    $(".spotlBox .contTit").stop().animate({"top": move5*0.5});
+    $(".spotlBox .spotlWrap").stop().animate({"top": move5-2});
     
-    section.each(function(){
-        $(this).removeClass("thum");
-        $(this).addClass("list");
-    });
-    
-    $(".list_num").show();
-});
-thumBtn.click(function(){
-    
-    section.each(function(){
-        $(this).removeClass("list");
-        $(this).addClass("thum");
-    });
-    
-    $(".list_num").hide();
 });
 ```
+
 
 
 ***
 ## 💬 가장 아쉬운 점, 고쳐야할 점
-+ 처음 작성 시 css 적용 순위에 신경쓰지 못하고 만든 점
-+ 미디어 쿼리 정리가 안되어 있다.(처음에 미디어 쿼리를 염두해 두고 만들지 않았기 때문에 심지어 파일이 분리되어 있음)
-+ js파일도 더 간단하게 작성 할 수 있지 않을까?   
-  👉 코드 수정, 파일 정리하기
-+ jQuery로만 작성
-+ 현재(2020.09) 사파리에서는 index 중간의 스크롤바가 보이지 않는다.(크로스 브라우징에 더 신경쓰자)
-+ ! 한 번 지저분하게 만들어 놓은 코드는 수정하거나 덧붙이기도 쉽지 않다.
++ 같은 구조로 있는 요소들을 한꺼번에 저장해서 움직일 수 있을 것도 같은데...🤔
++ index.html에만 기능들이 너무 몰려있는 것 같기도 하다.
 
 ***
 
-## 👋 [다음 프로젝트로 넘어가기](https://github.com/user809-git/portfolio2)
+## 👋 [이전 프로젝트로 넘어가기 -> Design Samsung](https://github.com/user809-git/portfolio1)
+## 👋 [다음 프로젝트로 넘어가기 (팀프로젝트)](https://github.com/user809-git/portfolioA)
