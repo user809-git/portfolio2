@@ -75,32 +75,72 @@ $(document).ready(function () {
     // visual slide swiper
     mainVisual.on("mousemove", function (e) {
         // 변수에 마우스 커서의 x축, y축 위치 저장
-        var posX = e.pageX / 2;
-        var posY = e.pageY / 2;
+        var posX = e.pageX / 100;
+        var posY = e.pageY / 100;
 
-        $(".titleBox1").css({ "left": 210 + (posX / 10), "top": 400 + (posY / 10) });
-        $(".sImg11").css({ "left": 20 + (posX / 6), "top": 20 + (posY / 3) });
-        $(".sImg12").css({ "right": 130 + (posX / 6), "bottom": -40 + (posY / 3) });
-        $(".titleBox2").css({ "left": 260 + (posX / 9), "top": 520 + (posY / 10) });
-        $(".sImg21").css({ "left": 470 + (posX / 5), "top": 180 + (posY / 3) });
+        $(".titleBox1").css({
+            "left": 24 + posX + "%",
+            "top": 50 + posY + "%"
+        });
+        $(".sImg11").css({
+            "left": 10 + posX + "%",
+            "top": 10 + posY + "%"
+        });
+        $(".sImg12").css({
+            "right": 5 + posX + "%",
+            "bottom": 30 + posY + "%"
+        });
+        $(".titleBox2").css({
+            "left": 22 + posX + "%",
+            "top": 65 + posY + "%"
+        });
+        $(".sImg21").css({
+            "left": 35 + posX + "%",
+            "top": 30 + posY + "%"
+        });
 
-        $(".sImg22").css({ "left": 380 + (posX / 9), "top": 200 + (posY / 7) });
-        $(".sImg23").css({ "right": 220 + (posX / 5), "top": 200 + (posY / 5) });
+        $(".sImg22").css({
+            "left": 20 + posX + "%",
+            "top": 35 + posY + "%"
+        });
+        $(".sImg23").css({
+            "right": 20 + posX + "%",
+            "top": 40 + posY + "%"
+        });
 
-        $(".titleBox3").css({ "right": 210 + (posX / 11), "top": 310 + (posY / 9) });
-        $(".sImg31").css({ "left": 210 + (posX / 6), "bottom": 30 + (posY / 6) });
-        $(".sImg32").css({ "left": 490 + (posX / 3), "bottom": 100 + (posY / 5) });
-        $(".sImg33").css({ "right": 200 + (posX / 5), "bottom": 270 + (posY / 5) });
+        $(".titleBox3").css({
+            "right": 13 + posX + "%",
+            "top": 35 + posY + "%"
+        });
+        $(".sImg31").css({
+            "left": 12 + posX + "%",
+            "bottom": 25 + posY + "%"
+        });
+        $(".sImg32").css({
+            "left": 35 + posX + "%",
+            "bottom": 21 + posY + "%"
+        });
+        $(".sImg33").css({
+            "right": 15 + posX + "%",
+            "bottom": 30 + posY + "%"
+        });
 
-        $(".titleBox4").css({ "left": 450 + (posX / 7), "top": 570 + (posY / 10) });
-        $(".sImg41").css({ "right": -20 + (posX / 5), "top": -80 + (posY / 3) });
+        $(".titleBox4").css({
+            "left": 27 + posX + "%",
+            "top": 60 + posY + "%"
+        });
+        $(".sImg41").css({
+            "right": 15 + posX + "%",
+            "top": 20 + posY + "%"
+        });
     });
+
+
 
     $(".series-showall").click(function () {
         $(this).hide();
         $(".seriesWrap").css('height', '2380px');
     });
-
 
 
     // series pagination
