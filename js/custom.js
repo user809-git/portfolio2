@@ -79,8 +79,8 @@ $(document).ready(function () {
         var posY = e.pageY / 100;
 
         $(".titleBox1").css({
-            "left": 24 + posX + "%",
-            "top": 50 + posY + "%"
+            "left": 24 + posX / 10 + "%",
+            "top": 50 + posY / 10 + "%"
         });
         $(".sImg11").css({
             "left": 10 + posX + "%",
@@ -91,8 +91,8 @@ $(document).ready(function () {
             "bottom": 30 + posY + "%"
         });
         $(".titleBox2").css({
-            "left": 22 + posX + "%",
-            "top": 65 + posY + "%"
+            "left": 22 + posX / 10 + "%",
+            "top": 65 + posY / 10 + "%"
         });
         $(".sImg21").css({
             "left": 35 + posX + "%",
@@ -109,8 +109,8 @@ $(document).ready(function () {
         });
 
         $(".titleBox3").css({
-            "right": 13 + posX + "%",
-            "top": 35 + posY + "%"
+            "right": 13 + posX / 10 + "%",
+            "top": 35 + posY / 10 + "%"
         });
         $(".sImg31").css({
             "left": 12 + posX + "%",
@@ -126,8 +126,8 @@ $(document).ready(function () {
         });
 
         $(".titleBox4").css({
-            "left": 27 + posX + "%",
-            "top": 60 + posY + "%"
+            "left": 27 + posX / 10 + "%",
+            "top": 60 + posY / 10 + "%"
         });
         $(".sImg41").css({
             "right": 15 + posX + "%",
